@@ -44,7 +44,7 @@ locals {
 }
 
 # change only providers
-#tfsec:ignore:GEN003
+#tfsec:ignore:general-secrets-no-plaintext-exposure
 module "tlscert-dev-api-dev-product-pagopa-it-cert_az" {
   source = "git::https://github.com/pagopa/azuredevops-tf-modules.git//azuredevops_build_definition_tls_cert?ref=v2.0.4"
   count  = var.tlscert-dev-api-dev-product-pagopa-it.pipeline.enable_tls_cert == true ? 1 : 0
@@ -54,9 +54,10 @@ module "tlscert-dev-api-dev-product-pagopa-it-cert_az" {
     azurerm = azurerm.dev
   }
 
-  project_id                   = azuredevops_project.project.id
-  repository                   = var.tlscert-dev-api-dev-product-pagopa-it.repository
-  name                         = "${var.tlscert-dev-api-dev-product-pagopa-it.pipeline.dns_record_name}.${var.tlscert-dev-api-dev-product-pagopa-it.pipeline.dns_zone_name}"
+  project_id = azuredevops_project.project.id
+  repository = var.tlscert-dev-api-dev-product-pagopa-it.repository
+  name       = "${var.tlscert-dev-api-dev-product-pagopa-it.pipeline.dns_record_name}.${var.tlscert-dev-api-dev-product-pagopa-it.pipeline.dns_zone_name}"
+  #tfsec:ignore:general-secrets-no-plaintext-exposure
   renew_token                  = local.tlscert_renew_token
   path                         = var.tlscert-dev-api-dev-product-pagopa-it.pipeline.path
   github_service_connection_id = azuredevops_serviceendpoint_github.azure-devops-github-ro.id

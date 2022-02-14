@@ -9,7 +9,8 @@ module "PROD-TLS-CERT-SERVICE-CONN" {
     azurerm = azurerm.prod
   }
 
-  project_id        = azuredevops_project.project.id
+  project_id = azuredevops_project.project.id
+  #tfsec:ignore:general-secrets-no-plaintext-exposure
   renew_token       = local.tlscert_renew_token
   name              = "${local.prefix}-p-tls-cert"
   tenant_id         = module.secrets.values["TENANTID"].value

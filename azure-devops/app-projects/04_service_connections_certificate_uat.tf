@@ -9,7 +9,8 @@ module "UAT-TLS-CERT-SERVICE-CONN" {
     azurerm = azurerm.uat
   }
 
-  project_id        = azuredevops_project.project.id
+  project_id = azuredevops_project.project.id
+  #tfsec:ignore:general-secrets-no-plaintext-exposure
   renew_token       = local.tlscert_renew_token
   name              = "${local.prefix}-u-tls-cert"
   tenant_id         = module.secrets.values["TENANTID"].value

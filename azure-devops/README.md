@@ -1,3 +1,5 @@
+[![Static Analysis](https://github.com/pagopa/template-devops/actions/workflows/static_analysis.yml/badge.svg?branch=main)](https://github.com/pagopa/template-devops/actions/workflows/static_analysis.yml)
+
 # Azure DevOps
 
 This folder is for managing **Azure DevOps** projects and pipelines.
