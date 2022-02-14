@@ -1,3 +1,5 @@
+[![Static Analysis](https://github.com/pagopa/template-devops/actions/workflows/static_analysis.yml/badge.svg?branch=main)](https://github.com/pagopa/template-devops/actions/workflows/static_analysis.yml)
+
 # gitops
 
 A collection of common tools to automate our projects configurations.
