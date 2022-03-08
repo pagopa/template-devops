@@ -24,18 +24,18 @@ locals {
   azure_devops_org = "pagopaspa"
 
   # 🔐 KV
-  dev_key_vault_name  = format("%s-d-kv-neu", local.prefix)
-  uat_key_vault_name  = format("%s-u-kv-neu", local.prefix)
-  prod_key_vault_name = format("%s-p-kv-weu", local.prefix)
+  dev_key_vault_name  = "${local.prefix}-d-kv-neu"
+  uat_key_vault_name  = "${local.prefix}-u-kv-neu"
+  prod_key_vault_name = "${local.prefix}-p-kv-weu"
 
-  dev_key_vault_resource_group  = format("%s-d-sec-rg-neu", local.prefix)
-  uat_key_vault_resource_group  = format("%s-u-sec-rg-neu", local.prefix)
-  prod_key_vault_resource_group = format("%s-p-sec-rg-weu", local.prefix)
+  dev_key_vault_resource_group  = "${local.prefix}-d-sec-rg-neu"
+  uat_key_vault_resource_group  = "${local.prefix}-u-sec-rg-neu"
+  prod_key_vault_resource_group = "${local.prefix}-p-sec-rg-weu"
 
   # ☁️ VNET
-  dev_vnet_rg  = format("%s-d-vnet-rg", local.prefix)
-  uat_vnet_rg  = format("%s-u-vnet-rg", local.prefix)
-  prod_vnet_rg = format("%s-p-vnet-rg", local.prefix)
+  dev_vnet_rg  = "${local.prefix}-d-vnet-rg"
+  uat_vnet_rg  = "${local.prefix}-u-vnet-rg"
+  prod_vnet_rg = "${local.prefix}-p-vnet-rg"
 
   # 📦 ACR DEV DOCKER
   srv_endpoint_docker_registry_dev = "${local.prefix}-azurecr-dev"
@@ -53,5 +53,6 @@ locals {
   docker_registry_name_prod         = "${local.prefix}pacr"
 
   #tfsec:ignore:general-secrets-no-plaintext-exposure
+  #tfsec:ignore:GEN002
   tlscert_renew_token = "v1"
 }

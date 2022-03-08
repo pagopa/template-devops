@@ -23,13 +23,13 @@ locals {
   azure_devops_org = "pagopaspa"
   github_org       = "pagopa"
 
-  dev_key_vault_name  = format("%s-d-kv", local.prefix)
-  uat_key_vault_name  = format("%s-u-kv", local.prefix)
-  prod_key_vault_name = format("%s-p-kv", local.prefix)
+  dev_key_vault_name  = "${local.prefix}-d-kv"
+  uat_key_vault_name  = "${local.prefix}-u-kv"
+  prod_key_vault_name = "${local.prefix}-p-kv"
 
-  dev_key_vault_resource_group  = format("%s-d-sec-rg", local.prefix)
-  uat_key_vault_resource_group  = format("%s-u-sec-rg", local.prefix)
-  prod_key_vault_resource_group = format("%s-p-sec-rg", local.prefix)
+  dev_key_vault_resource_group  = "${local.prefix}-d-sec-rg"
+  uat_key_vault_resource_group  = "${local.prefix}-u-sec-rg"
+  prod_key_vault_resource_group = "${local.prefix}-p-sec-rg"
 
 
   #
