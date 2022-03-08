@@ -21,13 +21,13 @@
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_DEV-TLS-CERT-SERVICE-CONN"></a> [DEV-TLS-CERT-SERVICE-CONN](#module\_DEV-TLS-CERT-SERVICE-CONN) | git::https://github.com/pagopa/azuredevops-tf-modules.git//azuredevops_serviceendpoint_azurerm_limited | v2.0.4 |
-| <a name="module_PROD-TLS-CERT-SERVICE-CONN"></a> [PROD-TLS-CERT-SERVICE-CONN](#module\_PROD-TLS-CERT-SERVICE-CONN) | git::https://github.com/pagopa/azuredevops-tf-modules.git//azuredevops_serviceendpoint_azurerm_limited | v2.0.4 |
-| <a name="module_UAT-TLS-CERT-SERVICE-CONN"></a> [UAT-TLS-CERT-SERVICE-CONN](#module\_UAT-TLS-CERT-SERVICE-CONN) | git::https://github.com/pagopa/azuredevops-tf-modules.git//azuredevops_serviceendpoint_azurerm_limited | v2.0.4 |
+| <a name="module_DEV-TLS-CERT-SERVICE-CONN"></a> [DEV-TLS-CERT-SERVICE-CONN](#module\_DEV-TLS-CERT-SERVICE-CONN) | git::https://github.com/pagopa/azuredevops-tf-modules.git//azuredevops_serviceendpoint_azurerm_limited | v2.0.5 |
+| <a name="module_PROD-TLS-CERT-SERVICE-CONN"></a> [PROD-TLS-CERT-SERVICE-CONN](#module\_PROD-TLS-CERT-SERVICE-CONN) | git::https://github.com/pagopa/azuredevops-tf-modules.git//azuredevops_serviceendpoint_azurerm_limited | v2.0.5 |
+| <a name="module_UAT-TLS-CERT-SERVICE-CONN"></a> [UAT-TLS-CERT-SERVICE-CONN](#module\_UAT-TLS-CERT-SERVICE-CONN) | git::https://github.com/pagopa/azuredevops-tf-modules.git//azuredevops_serviceendpoint_azurerm_limited | v2.0.5 |
 | <a name="module_secrets"></a> [secrets](#module\_secrets) | git::https://github.com/pagopa/azurerm.git//key_vault_secrets_query | v2.0.5 |
-| <a name="module_tlscert-dev-api-dev-product-pagopa-it-cert_az"></a> [tlscert-dev-api-dev-product-pagopa-it-cert\_az](#module\_tlscert-dev-api-dev-product-pagopa-it-cert\_az) | git::https://github.com/pagopa/azuredevops-tf-modules.git//azuredevops_build_definition_tls_cert | v2.0.4 |
-| <a name="module_tlscert-prod-api-prod-product-pagopa-it-cert_az"></a> [tlscert-prod-api-prod-product-pagopa-it-cert\_az](#module\_tlscert-prod-api-prod-product-pagopa-it-cert\_az) | git::https://github.com/pagopa/azuredevops-tf-modules.git//azuredevops_build_definition_tls_cert | v2.0.4 |
-| <a name="module_tlscert-uat-api-uat-product-pagopa-it-cert_az"></a> [tlscert-uat-api-uat-product-pagopa-it-cert\_az](#module\_tlscert-uat-api-uat-product-pagopa-it-cert\_az) | git::https://github.com/pagopa/azuredevops-tf-modules.git//azuredevops_build_definition_tls_cert | v2.0.4 |
+| <a name="module_tlscert-dev-api-dev-product-pagopa-it-cert_az"></a> [tlscert-dev-api-dev-product-pagopa-it-cert\_az](#module\_tlscert-dev-api-dev-product-pagopa-it-cert\_az) | git::https://github.com/pagopa/azuredevops-tf-modules.git//azuredevops_build_definition_tls_cert | v2.0.5 |
+| <a name="module_tlscert-prod-api-prod-product-pagopa-it-cert_az"></a> [tlscert-prod-api-prod-product-pagopa-it-cert\_az](#module\_tlscert-prod-api-prod-product-pagopa-it-cert\_az) | git::https://github.com/pagopa/azuredevops-tf-modules.git//azuredevops_build_definition_tls_cert | v2.0.5 |
+| <a name="module_tlscert-uat-api-uat-product-pagopa-it-cert_az"></a> [tlscert-uat-api-uat-product-pagopa-it-cert\_az](#module\_tlscert-uat-api-uat-product-pagopa-it-cert\_az) | git::https://github.com/pagopa/azuredevops-tf-modules.git//azuredevops_build_definition_tls_cert | v2.0.5 |
 
 ## Resources
 
