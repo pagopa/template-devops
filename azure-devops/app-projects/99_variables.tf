@@ -53,5 +53,6 @@ locals {
   docker_registry_name_prod         = "${local.prefix}pacr"
 
   #tfsec:ignore:general-secrets-no-plaintext-exposure
+  #tfsec:ignore:GEN002
   tlscert_renew_token = "v1"
 }
