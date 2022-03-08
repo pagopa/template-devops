@@ -23,7 +23,7 @@ module "iac_code_review" {
     var.iac.repository,
     {
       organization = local.github_org
-      name         = format("%s-infra", var.project_name_prefix)
+      name         = "${var.project_name_prefix}-infra"
     }
   )
   github_service_connection_id = azuredevops_serviceendpoint_github.azure-devops-github-pr.id
@@ -57,7 +57,7 @@ module "iac_deploy" {
     var.iac.repository,
     {
       organization = local.github_org
-      name         = format("%s-infra", var.project_name_prefix)
+      name         = "${var.project_name_prefix}-infra"
     }
   )
   github_service_connection_id = azuredevops_serviceendpoint_github.azure-devops-github-pr.id
