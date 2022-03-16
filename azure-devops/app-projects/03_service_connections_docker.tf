@@ -1,5 +1,5 @@
 # # 🟢 DEV service connection for azure container registry 
-# resource "azuredevops_serviceendpoint_azurecr" "azurecr-dev" {
+# resource "azuredevops_serviceendpoint_azurecr" "acr_docker_registry_dev" {
 #   depends_on = [azuredevops_project.project]
 
 #   project_id     = azuredevops_project.project.id
@@ -14,7 +14,7 @@
 # }
 
 # # 🟨 UAT service connection for azure container registry 
-# resource "azuredevops_serviceendpoint_azurecr" "azurecr-uat" {
+# resource "azuredevops_serviceendpoint_azurecr" "acr_docker_registry_uat" {
 #   depends_on = [azuredevops_project.project]
 
 #   service_endpoint_name = local.srv_endpoint_name_docker_registry_uat
@@ -29,7 +29,7 @@
 # }
 
 # # 🛑 PROD service connection for azure container registry
-# resource "azuredevops_serviceendpoint_azurecr" "azurecr-prod" {
+# resource "azuredevops_serviceendpoint_azurecr" "acr_docker_registry_prod" {
 #   depends_on = [azuredevops_project.project]
 
 #   service_endpoint_name = local.srv_endpoint_name_docker_registry_prod
