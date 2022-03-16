@@ -5,7 +5,7 @@
 #   project_id     = azuredevops_project.project.id
 #   resource_group = local.docker_registry_rg_name_dev
 
-#   service_endpoint_name = local.srv_endpoint_docker_registry_dev
+#   service_endpoint_name = local.srv_endpoint_name_docker_registry_dev
 #   azurecr_name          = local.docker_registry_name_dev
 
 #   azurecr_subscription_name = var.dev_subscription_name
@@ -17,7 +17,7 @@
 # resource "azuredevops_serviceendpoint_azurecr" "azurecr-uat" {
 #   depends_on = [azuredevops_project.project]
 
-#   service_endpoint_name = local.srv_endpoint_docker_registry_uat
+#   service_endpoint_name = local.srv_endpoint_name_docker_registry_uat
 #   azurecr_name          = local.docker_registry_name_uat
 
 #   project_id     = azuredevops_project.project.id
@@ -32,7 +32,7 @@
 # resource "azuredevops_serviceendpoint_azurecr" "azurecr-prod" {
 #   depends_on = [azuredevops_project.project]
 
-#   service_endpoint_name = local.srv_endpoint_docker_registry_prod
+#   service_endpoint_name = local.srv_endpoint_name_docker_registry_prod
 #   azurecr_name          = local.docker_registry_name_prod
 
 #   project_id     = azuredevops_project.project.id
