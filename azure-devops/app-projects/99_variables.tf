@@ -19,6 +19,11 @@ variable "project_name_prefix" {
   description = "Project name prefix (e.g. userregistry)"
 }
 
+variable "pipeline_environments" {
+  type        = list(any)
+  description = "List of environments pipeline to create"
+}
+
 locals {
   prefix           = "prefix"
   azure_devops_org = "pagopaspa"
@@ -28,9 +33,9 @@ locals {
   uat_key_vault_name  = "${local.prefix}-u-kv-neu"
   prod_key_vault_name = "${local.prefix}-p-kv-weu"
 
-  dev_key_vault_resource_group  = "${local.prefix}-d-sec-rg-neu"
-  uat_key_vault_resource_group  = "${local.prefix}-u-sec-rg-neu"
-  prod_key_vault_resource_group = "${local.prefix}-p-sec-rg-weu"
+  dev_key_vault_resource_group  = "${local.prefix}-d-sec-rg"
+  uat_key_vault_resource_group  = "${local.prefix}-u-sec-rg"
+  prod_key_vault_resource_group = "${local.prefix}-p-sec-rg"
 
   # ☁️ VNET
   dev_vnet_rg  = "${local.prefix}-d-vnet-rg"
