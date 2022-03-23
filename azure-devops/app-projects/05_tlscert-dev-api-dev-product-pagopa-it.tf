@@ -49,7 +49,7 @@ module "tlscert-dev-api-dev-product-pagopa-it-cert_az" {
   source = "git::https://github.com/pagopa/azuredevops-tf-modules.git//azuredevops_build_definition_tls_cert?ref=v2.0.5"
   count  = var.tlscert-dev-api-dev-product-pagopa-it.pipeline.enable_tls_cert == true ? 1 : 0
 
-  # change me
+  # allows subscription connection
   providers = {
     azurerm = azurerm.dev
   }
