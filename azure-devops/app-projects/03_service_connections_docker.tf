@@ -1,4 +1,4 @@
-# # 🟢 DEV service connection for azure container registry 
+# # 🟢 DEV service connection for azure container registry
 # resource "azuredevops_serviceendpoint_azurecr" "azurecr-dev" {
 #   depends_on = [azuredevops_project.project]
 
@@ -13,7 +13,7 @@
 #   azurecr_subscription_id   = module.secrets.values["DEV-SUBSCRIPTION-ID"].value
 # }
 
-# # 🟨 UAT service connection for azure container registry 
+# # 🟨 UAT service connection for azure container registry
 # resource "azuredevops_serviceendpoint_azurecr" "azurecr-uat" {
 #   depends_on = [azuredevops_project.project]
 
