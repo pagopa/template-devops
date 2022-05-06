@@ -19,11 +19,6 @@ variable "project_name_prefix" {
   description = "Project name prefix (e.g. userregistry)"
 }
 
-variable "pipeline_environments" {
-  type        = list(any)
-  description = "List of environments pipeline to create"
-}
-
 locals {
   prefix           = "prefix"
   azure_devops_org = "pagopaspa"
