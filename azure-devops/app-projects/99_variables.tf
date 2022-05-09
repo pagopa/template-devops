@@ -20,8 +20,8 @@ variable "project_name_prefix" {
 }
 
 locals {
-  project_prefix_short           = "<project_prefix_short: e.g = selc,cstar"
-  azure_devops_org = "pagopaspa"
+  project_prefix_short = "<project_prefix_short: e.g = selc,cstar"
+  azure_devops_org     = "pagopaspa"
 
   # 🔐 KV
   dev_key_vault_azdo_name  = "${local.project_prefix_short}-d-azdo-weu-kv"
