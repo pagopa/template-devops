@@ -19,7 +19,7 @@ variable "project_name_prefix" {
 }
 
 locals {
-  project_prefix_short = "<project_prefix_short: e.g = selc,cstar"
+  project_prefix_short = "short"
   azure_devops_org     = "pagopaspa"
 
   # 🔐 KV
