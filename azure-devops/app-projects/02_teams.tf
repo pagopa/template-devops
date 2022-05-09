@@ -1,4 +1,4 @@
 resource "azuredevops_team" "external_team" {
   project_id = azuredevops_project.project.id
-  name       = "${local.prefix}-projects-externals-team"
+  name       = "${local.project_prefix_short}-projects-externals-team"
 }
