@@ -1,3 +1,5 @@
+.tfsec
+
 # Local .terraform directories
 **/.terraform/*
 
